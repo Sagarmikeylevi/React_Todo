@@ -3,10 +3,13 @@ import classes from "./CreateTaskForm.module.css";
 import Card from "./UI/Card";
 import { v4 as uuidv4 } from "uuid";
 import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { addTask } from "../store/taskSlice";
 
 const CreateTaskForm = () => {
   const [taskTitle, setTaskTitle] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
+  const dispatch = useDispatch();
 
   const { link } = useParams();
   const decodedLink = decodeURIComponent(link);
@@ -26,6 +29,8 @@ const CreateTaskForm = () => {
       categoryURL: decodedLink,
       isCompleted: false,
     };
+
+    dispatch(addTask(newTask));
 
     navigate("/");
   };
