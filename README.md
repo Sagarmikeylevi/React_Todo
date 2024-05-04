@@ -1,8 +1,10 @@
-# React + Vite
+## Project Overview: This compact ToDo app, built with React, leverages the renowned JavaScript library for creating user-friendly interfaces. Users can seamlessly manage tasks, categorize them, mark them as complete or incomplete, and swiftly delete them. Notably, the app utilizes local storage for persistent storage of tasks.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Live: https://todo-vert-three.vercel.app/
 
-Currently, two official plugins are available:
+## Tech Stacks: React, Redux, Css.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation: 
+- Download the code 
+- Run "npm install"
+- Run "npm run dev"
